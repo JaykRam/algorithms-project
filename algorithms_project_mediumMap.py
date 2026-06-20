@@ -5,7 +5,7 @@ import math
 # 1. MAP DATA: MEDIUM MAP
 # ===========================
 
-taytay_medium_graph = {
+taytay_graph = {
     'SM_Taytay': {'Tiangge': 10, 'NCBA': 15, 'Siena_College': 5, 'Robinsons_Cainta': 12},
     'Tiangge': {'SM_Taytay': 10, 'Public_Market': 5, 'Municipal_Hall': 8, 'Club_Manila_East': 6},
     'Public_Market': {'Tiangge': 5, 'Tres_Cruses': 12, 'Municipal_Hall': 4, 'Angono_Border': 18},
@@ -26,7 +26,7 @@ taytay_medium_graph = {
 }
 
 # (X, Y) Coordinates designed roughly to mirror real-world geography
-taytay_medium_coords = {
+taytay_coords = {
     'SM_Taytay': (0, 10), 'Tiangge': (5, 8), 'Public_Market': (6, 5),
     'Municipal_Hall': (4, 4), 'NCBA': (2, 2), 'Tres_Cruses': (10, 0),
     'Siena_College': (1, 14), 'Club_Manila_East': (8, 12),
@@ -198,14 +198,25 @@ def main():
 
     print("""
 ==========================
-         PLACES
+      PLACES (MEDIUM)
 ==========================
 SM_Taytay
 Tiangge
 Public_Market
 Municipal_Hall
 NCBA
-Tres_Cruses    
+Tres_Cruses
+Siena_College
+Club_Manila_East
+Robinsons_Cainta
+Junction_Cainta
+Parola
+Ortigas_Ext
+Tikling
+Ynares_Center
+Antipolo_Cathedral
+Angono_Border
+Pasig_Border
 ==========================
         """)
     

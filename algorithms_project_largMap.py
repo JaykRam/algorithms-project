@@ -5,7 +5,7 @@ import math
 # 1. MAP DATA: LARGE MAP
 # ===========================
 
-taytay_large_graph = {
+taytay_graph = {
     'SM_Taytay': {'Tiangge': 10, 'NCBA': 15, 'Siena_College': 5, 'Robinsons_Cainta': 12, 'Highway_2000': 18},
     'Tiangge': {'SM_Taytay': 10, 'Public_Market': 5, 'Municipal_Hall': 8, 'Club_Manila_East': 6},
     'Public_Market': {'Tiangge': 5, 'Tres_Cruses': 12, 'Municipal_Hall': 4, 'Angono_Border': 18},
@@ -45,7 +45,7 @@ taytay_large_graph = {
     'Morong': {'Teresa_Boundary': 30}
 }
 
-taytay_large_coords = {
+taytay_coords = {
     'SM_Taytay': (0, 10), 'Tiangge': (5, 8), 'Public_Market': (6, 5), 'Municipal_Hall': (4, 4), 
     'NCBA': (2, 2), 'Tres_Cruses': (10, 0), 'Siena_College': (1, 14), 'Club_Manila_East': (8, 12),
     'Robinsons_Cainta': (-4, 12), 'Junction_Cainta': (-8, 15), 'Parola': (-6, 5), 'Ortigas_Ext': (-10, 18),
@@ -219,14 +219,45 @@ def main():
 
     print("""
 ==========================
-         PLACES
+      PLACES (LARGE)
 ==========================
 SM_Taytay
 Tiangge
 Public_Market
 Municipal_Hall
 NCBA
-Tres_Cruses    
+Tres_Cruses
+Siena_College
+Club_Manila_East
+Robinsons_Cainta
+Junction_Cainta
+Parola
+Ortigas_Ext
+Tikling
+Ynares_Center
+Antipolo_Cathedral
+Angono_Border
+Pasig_Border
+Barkadahan_Bridge
+Highway_2000
+Muzon
+Sta_Lucia_Mall
+Marcos_Highway
+Masinag
+Sumulong_Highway
+Valley_Golf
+Beverly_Hills
+Hinulugang_Taktak
+Shopwise_Antipolo
+Pinto_Art_Museum
+Teresa_Boundary
+SM_Angono
+Angono_Petroglyphs
+Binangonan_Port
+Greenwoods
+Rosario
+Napindan
+Morong
 ==========================
         """)
     
