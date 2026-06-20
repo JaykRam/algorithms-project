@@ -2,7 +2,7 @@ import heapq
 import math
 
 # ===========================
-# 1. MAP DATA
+# 1. MAP DATA: SMALL MAP
 # ===========================
 
 # The Adjacency List: Nodes are locations in Taytay, edges are travel time in minutes.
