@@ -31,7 +31,7 @@ taytay_coords = {
 
 # 2.1 The Dijkstra Algorithm Function
 def dijkstra(graph, start, destination):
-    # 2. Initialization
+    # Initialization
     # Set all distances to infinity, except the start node which is 0
     distances = {node: float('infinity') for node in graph}
     distances[start] = 0
@@ -43,7 +43,7 @@ def dijkstra(graph, start, destination):
     # Format: (current_distance, node_name)
     priority_queue = [(0, start)]
     
-    # 3. The Core Loop
+    # The Core Loop
     while priority_queue:
         # Pop the node with the lowest distance from the queue
         current_distance, current_node = heapq.heappop(priority_queue)
@@ -68,7 +68,7 @@ def dijkstra(graph, start, destination):
                 # Push the updated distance and neighbor into the queue
                 heapq.heappush(priority_queue, (distance, neighbor))
                 
-    # 4. Path Reconstruction
+    # Path Reconstruction
     path = []
     current = destination
     
@@ -113,7 +113,7 @@ def a_star(graph, coords, start, destination):
     # Priority queue stores tuples of: (f_score, node_name)
     priority_queue = [(f_scores[start], start)]
     
-    # 3. The Core Loop
+    # The Core Loop
     while priority_queue:
         # Pop the node with the lowest f_score (the most promising path)
         current_f_score, current_node = heapq.heappop(priority_queue)
@@ -142,7 +142,7 @@ def a_star(graph, coords, start, destination):
                 # Add the neighbor to the queue to be explored
                 heapq.heappush(priority_queue, (f_scores[neighbor], neighbor))
                 
-    # 4. Path Reconstruction
+    # Path Reconstruction
     path = []
     current = destination
     
